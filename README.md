@@ -19,4 +19,3 @@ b. pyngrok
 # Templates
 I have added only three templates.   you can add as per your requirements.
 
-
